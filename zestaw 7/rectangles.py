@@ -52,7 +52,7 @@ class Rectangle:
         point2_x = min(self.point2.cord_x, other.point2.cord_x)
         point2_y = min(self.point2.cord_y, other.point2.cord_y)
         if(point1_x > point2_x or point1_y > point2_y):
-            raise ValueError("no intersection between rectangles")
+            raise ValueError("rectangles does not corss")
         return Rectangle(point1_x, point1_y, point2_x, point2_y)
 
     def cover(self, other):         
@@ -64,7 +64,7 @@ class Rectangle:
 
     def make4(self):                
         if(self == Rectangle()):
-            raise ValueError("can't divide zero")
+            raise ValueError("forbidden division by zero")
         return [Rectangle(self.point1.cord_x, self.point1.cord_y, 
                         (self.point2.cord_x + self.point1.cord_x)/2, 
                         (self.point2.cord_y + self.point1.cord_x)/2),
