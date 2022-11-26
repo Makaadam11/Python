@@ -1,20 +1,7 @@
 print("\n-------------------zadanie 6.3 --------------------\n") 
 
 
-class Point:
-
-    def __init__(self, x=0, y=0):  
-        self.cord_x = x
-        self.cord_y = y
-
-    def __str__(self):              
-        return "({0}, {1})".format(self.cord_x, self.cord_y)
-
-    def __eq__(self, other):       
-        return (self.cord_x == other.cord_x) and (self.cord_y == other.cord_y)
-
-    def __add__(self, other):       
-        return Point(self.cord_x + other.cord_x, self.cord_y + other.cord_y)
+from points import Point
 
 
 class Triangle:
