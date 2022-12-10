@@ -76,6 +76,7 @@ class Rectangle:
     @property
     def cord_x1(self):
         return self.point1.cord_x
+    print()      
     @property
     def cord_y1(self):
         return self.point1.cord_y
@@ -94,14 +95,14 @@ class Rectangle:
 
     @property
     def topleft(self):
-        min(self.point1.cord_x,self.point2.cord_x),max(self.point1.cord_y,self.point2.cord_y)  
+       return min(self.point1.cord_x,self.point2.cord_x),max(self.point1.cord_y,self.point2.cord_y)  
     @property
     def bottomleft(self):
-        min(self.point1.cord_x,self.point2.cord_x),min(self.point1.cord_y,self.point2.cord_y)  
+       return min(self.point1.cord_x,self.point2.cord_x),min(self.point1.cord_y,self.point2.cord_y)  
     @property
     def topright(self):
-        max(self.point1.cord_x,self.point2.cord_x),max(self.point1.cord_y,self.point2.cord_y)  
+       return max(self.point1.cord_x,self.point2.cord_x),max(self.point1.cord_y,self.point2.cord_y)  
     @property
     def bottomright(self):
-        max(self.point1.cord_x,self.point2.cord_x),min(self.point1.cord_y,self.point2.cord_y)  
+       return max(self.point1.cord_x,self.point2.cord_x),min(self.point1.cord_y,self.point2.cord_y)  
 
