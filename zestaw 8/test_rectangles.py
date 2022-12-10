@@ -1,4 +1,4 @@
-print("\n-------------------zadanie 7.3 --------------------\n") 
+print("\n-------------------zadanie 8.1 --------------------\n") 
 
 import unittest
 from rectangles import Rectangle
