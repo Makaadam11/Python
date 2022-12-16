@@ -1,6 +1,11 @@
 Python Project 2022 - Adam Mąka
 
 This project implements Minimum Spanning Tree and Clustering problem for diffrent datasets from data_x.csv files.
-To start this application simply run it and type number from 0-5 to pick diffrent datasets.
+
+To start this application simply run it and type:
+1) number from 0-5 to pick diffrent datasets.
+2) method type rbf or knn
+3) number of clusters 
+
 Wait for result and visualization.
  
