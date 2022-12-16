@@ -62,14 +62,12 @@ class Rectangle:
                         (self.point2.cord_y + self.point1.cord_y)/2, 
                         self.point2.cord_x, self.point2.cord_y)]
 
-    def from_points(self, p1, p2):
-        rectangle = Rectangle(p1[0],p1[1],p2[0],p2[1])
-        return "Rectangle(topleft ({0},{1}), bottomleft ({2},{3}), topright ({4},{5}), bottomright ({6},{7}))".format(
-                min(rectangle.point1.cord_x,rectangle.point2.cord_x),max(rectangle.point1.cord_y,rectangle.point2.cord_y),
-                min(rectangle.point1.cord_x,rectangle.point2.cord_x),min(rectangle.point1.cord_y,rectangle.point2.cord_y),
-                max(rectangle.point1.cord_x,rectangle.point2.cord_x),max(rectangle.point1.cord_y,rectangle.point2.cord_y),
-                max(rectangle.point1.cord_x,rectangle.point2.cord_x),min(rectangle.point1.cord_y,rectangle.point2.cord_y)
-            )
+    @classmethod
+    def from_points(cls, points):
+        point1, point2 = points
+        if not (isinstance(point2, Point) and isinstance(point1, Point)):
+            raise ValueError("Argument not iterable")
+        return cls(point1.cord_x, point1.cord_y, point2.cord_x, point2.cord_y)
         
     
 
