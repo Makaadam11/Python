@@ -1,1 +1,1 @@
-Assigments for Mathematics and Statistics - A Maka
+#Assigments for Mathematics and Statistics classes - A Maka
