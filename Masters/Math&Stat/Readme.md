@@ -35,6 +35,4 @@ https://seaborn.pydata.org/examples/index.html,
 https://www.statology.org/seaborn-stacked-bar-plot/.
 
 
-Link to Assigment1 Video: https://drive.google.com/drive/folders/1ITSCmnwqqsiaatnZyKBxpjearMU8brMZ
-
-Link to Assigment2 Video: https://drive.google.com/drive/folders/16PqVTmHUN-b0e4RrXvl5ItpR3NOwY-9V?hl=pl
+Link to Assigment 1 & 2 Videos: https://drive.google.com/drive/folders/1ITSCmnwqqsiaatnZyKBxpjearMU8brMZ
